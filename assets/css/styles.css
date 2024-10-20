@@ -72,30 +72,15 @@ hr {
   border: 0;
   border-top: 1px solid rgba(255, 255, 255, 0.3);
 }
-/* Pop-up styling */
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
 
-.popup {
-  display: none;
-  margin-top: 20px; /* Space below buttons */
+
+.contact-details {
+  display: none; /* Hidden by default */
+  margin-top: 10px;
   text-align: left;
 }
 
-.popup-content {
-  background-color: white;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  text-align: center;
-}
-
-.close {
-  float: right;
-  font-size: 20px;
-  font-weight: bold;
-  cursor: pointer;
-  color: #aaa;
-}
-
-.close:hover {
-  color: black;
-}
