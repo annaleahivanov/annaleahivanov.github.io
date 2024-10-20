@@ -31,9 +31,9 @@ h1 {
   line-height: 1.6;
 }
 
-/* Bullet List Styling */
 .bullet-list {
-  text-align: left;
+  display: inline-block; /* This ensures the list stays centered */
+  text-align: left; /* Keeps the bullet points aligned neatly */
   margin: 20px 0;
   padding: 0;
   list-style: none;
@@ -43,11 +43,13 @@ h1 {
   content: "• ";
   color: #4b0082;
   font-weight: bold;
+  font-size: 1.2rem;
 }
 
 .bullet-list li {
   font-size: 1rem;
   margin-bottom: 10px;
+  line-height: 1.6;
 }
 /* Profile Picture */
 .profile-pic {
