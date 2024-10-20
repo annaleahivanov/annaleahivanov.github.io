@@ -1,141 +1,94 @@
-/* General Styles */
+/* General Body Styling */
 body {
-  font-family: 'Georgia', serif;
-  background-color: #f0f0f5;
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(to bottom, #a3d8f4, #e0aaff);
   margin: 0;
-  padding: 20px;
-  color: #333;
-}
-
-.container {
-  max-width: 800px;
-  margin: 50px auto;
-  text-align: center;
-  padding: 30px;
-  background-color: #ffffff;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
-  border-radius: 10px;
-}
-
-/* Header Styling */
-h1 {
-  font-size: 2.5rem;
-  margin-bottom: 20px;
-  color: #4b0082;
-}
-
-/* Introduction Paragraphs */
-.intro {
-  font-size: 1.1rem;
-  margin-bottom: 15px;
-  line-height: 1.6;
-}
-
-.bullet-list {
-  display: inline-block; /* This ensures the list stays centered */
-  text-align: left; /* Keeps the bullet points aligned neatly */
-  margin: 20px 0;
   padding: 0;
-  list-style: none;
-}
-
-.bullet-list li::before {
-  content: "• ";
-  color: #4b0082;
-  font-weight: bold;
-  font-size: 1.2rem;
-}
-
-.bullet-list li {
-  font-size: 1rem;
-  margin-bottom: 10px;
-  line-height: 1.6;
-}
-/* Profile Picture */
-.profile-pic {
-  border-radius: 50%;
-  width: 200px;
-  height: 200px;
-  object-fit: cover;
-  margin: 20px 0;
-}
-
-/* Navigation Buttons */
-.nav {
   display: flex;
   justify-content: center;
-  margin-top: 30px;
+  align-items: center;
+  min-height: 100vh;
 }
 
-.nav a {
-  background-color: rgba(255, 255, 255, 0.2);
-  border-radius: 25px;
+/* Profile Container */
+.profile-container {
+  text-align: center;
+  max-width: 500px;
+  padding: 40px;
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 15px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+/* Title */
+h1 {
+  font-size: 2.8rem;
+  margin-bottom: 10px;
+  color: #4b0082;
+}
+
+/* Profile Picture */
+.profile-pic {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 20px 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Role and Department */
+.role {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+p {
+  margin: 5px 0;
+}
+
+/* Curriculum Vitae Link */
+.cv-link {
+  display: inline-block;
+  margin: 20px 0;
+  font-weight: bold;
+  text-decoration: none;
+  color: #4b0082;
   padding: 10px 20px;
-  margin: 0 10px;
-  font-size: 16px;
-  transition: background-color 0.3s;
+  border: 1px solid #4b0082;
+  border-radius: 25px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.cv-link:hover {
+  background-color: #4b0082;
+  color: #fff;
+}
+
+/* Navigation Links */
+.nav a {
+  text-decoration: none;
+  margin: 10px;
+  padding: 10px 20px;
+  font-weight: bold;
+  color: #4b0082;
+  border: 1px solid #4b0082;
+  border-radius: 25px;
+  transition: background-color 0.3s, color 0.3s;
 }
 
 .nav a:hover {
-  background-color: rgba(255, 255, 255, 0.4);
+  background-color: #4b0082;
+  color: #fff;
 }
 
-hr {
-  width: 80%;
-  margin: 20px auto;
-  border: 0;
-  border-top: 1px solid rgba(255, 255, 255, 0.3);
+/* Contact Info */
+.hidden {
+  display: none;
 }
 
-
-.contact-details {
-  display: none; /* Hidden by default */
-  margin-top: 10px;
-  text-align: left;
-}
-* Gallery Styling */
-.gallery {
-  display: flex;
-  justify-content: space-around;
-  margin-top: 30px;
-  gap: 20px;
-}
-
-.gallery figure {
-  text-align: center;
-  margin: 0;
-}
-
-.gallery img {
-  width: 200px;
-  height: 200px;
-  object-fit: cover;
-  border-radius: 10px;
-  transition: transform 0.3s, box-shadow 0.3s;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-.gallery img:hover {
-  transform: scale(1.05);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
-}
-
-/* Image Captions */
-figcaption {
-  margin-top: 10px;
-  font-size: 0.9rem;
-  color: #666;
-}
-/* Back to Home Link */
-.back-home {
-  display: block;
-  margin-top: 40px;
-  text-decoration: none;
-  font-weight: bold;
-  color: #4b0082;
-  transition: color 0.2s;
-}
-
-.back-home:hover {
-  color: #000;
+#contactInfo {
+  margin-top: 15px;
+  font-size: 1rem;
 }
