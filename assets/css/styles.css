@@ -102,3 +102,23 @@ body {
 .gallery a img:hover {
   transform: scale(1.05);
 }
+.bullet-list {
+  display: inline-block; /* This ensures the list stays centered */
+  text-align: left; /* Keeps the bullet points aligned neatly */
+  margin: 20px 0;
+  padding: 0;
+  list-style: none;
+}
+
+.bullet-list li::before {
+  content: "• ";
+  color: #4b0082;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.bullet-list li {
+  font-size: 1rem;
+  margin-bottom: 10px;
+  line-height: 1.6;
+}
