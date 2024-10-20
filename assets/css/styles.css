@@ -1,42 +1,54 @@
 /* General Styles */
 body {
+  font-family: 'Georgia', serif;
+  background-color: #f0f0f5;
   margin: 0;
-  padding: 0;
-  font-family: 'Arial', sans-serif;
-  background: linear-gradient(to bottom right, #8F6FA1, #a79fa3);
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: white;
+  padding: 20px;
+  color: #333;
 }
 
 .container {
+  max-width: 800px;
+  margin: 50px auto;
   text-align: center;
-  max-width: 600px;
-  width: 100%;
-  padding: 20px;
+  padding: 30px;
+  background-color: #ffffff;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
 }
 
-/* Header Styles */
+/* Header Styling */
 h1 {
-  font-size: 36px;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #4b0082;
+}
+
+/* Introduction Paragraphs */
+.intro {
+  font-size: 1.1rem;
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
+
+/* Bullet List Styling */
+.bullet-list {
+  text-align: left;
+  margin: 20px 0;
+  padding: 0;
+  list-style: none;
+}
+
+.bullet-list li::before {
+  content: "• ";
+  color: #4b0082;
+  font-weight: bold;
+}
+
+.bullet-list li {
+  font-size: 1rem;
   margin-bottom: 10px;
-  letter-spacing: 2px;
 }
-
-p {
-  margin: 5px 0;
-  font-size: 18px;
-  letter-spacing: 1px;
-}
-
-a {
-  color: white;
-  text-decoration: none;
-  border-bottom: 1px dotted white;
-}
-
 /* Profile Picture */
 .profile-pic {
   border-radius: 50%;
@@ -72,10 +84,6 @@ hr {
   border: 0;
   border-top: 1px solid rgba(255, 255, 255, 0.3);
 }
-body {
-  font-family: Arial, sans-serif;
-  margin: 20px;
-}
 
 
 .contact-details {
@@ -83,22 +91,49 @@ body {
   margin-top: 10px;
   text-align: left;
 }
+* Gallery Styling */
 .gallery {
   display: flex;
-  justify-content: center;
-  gap: 10px;
-  margin-top: 20px;
+  justify-content: space-around;
+  margin-top: 30px;
+  gap: 20px;
 }
 
-.gallery a img {
-  width: 150px;
-  height: 150px;
+.gallery figure {
+  text-align: center;
+  margin: 0;
+}
+
+.gallery img {
+  width: 200px;
+  height: 200px;
   object-fit: cover;
-  border-radius: 8px;
+  border-radius: 10px;
+  transition: transform 0.3s, box-shadow 0.3s;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  transition: transform 0.2s;
 }
 
-.gallery a img:hover {
+.gallery img:hover {
   transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+/* Image Captions */
+figcaption {
+  margin-top: 10px;
+  font-size: 0.9rem;
+  color: #666;
+}
+/* Back to Home Link */
+.back-home {
+  display: block;
+  margin-top: 40px;
+  text-decoration: none;
+  font-weight: bold;
+  color: #4b0082;
+  transition: color 0.2s;
+}
+
+.back-home:hover {
+  color: #000;
 }
