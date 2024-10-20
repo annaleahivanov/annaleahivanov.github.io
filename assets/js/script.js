@@ -1,18 +1,9 @@
-// Get elements
 const contactBtn = document.getElementById('contactBtn');
-const contactPopup = document.getElementById('contactPopup');
-const closeBtn = document.querySelector('.close');
+const contactDetails = document.getElementById('contactDetails');
 
-// Show or hide the pop-up when the contact button is clicked
-contactBtn.onclick = function () {
-  if (contactPopup.style.display === 'none' || contactPopup.style.display === '') {
-    contactPopup.style.display = 'block';
-  } else {
-    contactPopup.style.display = 'none';
-  }
-};
-
-// Hide the pop-up when the close button is clicked
-closeBtn.onclick = function () {
-  contactPopup.style.display = 'none';
+// Toggle contact details visibility when the Contact button is clicked
+contactBtn.onclick = function (event) {
+  event.preventDefault(); // Prevent default anchor behavior
+  contactDetails.style.display =
+    contactDetails.style.display === 'none' ? 'block' : 'none';
 };
