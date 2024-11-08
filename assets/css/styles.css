@@ -1,7 +1,7 @@
 /* Global Styles */
 body {
   font-family: 'Inter', sans-serif;
-  background: linear-gradient(to bottom right, #8F6FA1, #a79fa3); 
+  background: linear-gradient(135deg, #a4b0e8, #d2b5e3); /* Original gradient */
   color: #333333;
   margin: 0;
   padding: 0;
@@ -11,8 +11,8 @@ body {
   min-height: 100vh;
 }
 
-/* Container */
-.container {
+/* Container for Research Page Only */
+.research-container {
   max-width: 800px;
   padding: 40px;
   background: rgba(255, 255, 255, 0.9); /* Light semi-transparent background */
